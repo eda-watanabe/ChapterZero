@@ -23,6 +23,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, WebActivity.class));
             }
         });
+
+        findViewById(R.id.btn_scr_act_transition).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, ScrollingActivity.class));
+            }
+        });
     }
 
     @Override
